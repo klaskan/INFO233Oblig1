@@ -1,0 +1,107 @@
+Kjøretidsanalyse
+
+        ___
+    . -^   `--,
+   /# =========`-_
+  /# (--====___====\
+ /#   .- --.  . --.|
+/##   |  * ) (   * ),
+|##   \    /\ \   / |            @autor Klas Rogne Kanestrøm
+|###   ---   \ ---  |
+|####      ___)    #|
+|######           ##|
+ \##### ---------- /
+  \####           (
+   `\###          |
+     \###         |
+      \##        |
+       \###.    .)
+        `======/
+                            ______ ______ _      __  __  _______
+                           / __/ // / __ \ | /| / / /  |/  / __/
+                          _\ \/ _  / /_/ / |/ |/ / / /|_/ / _/
+                         /___/_//_/\____/|__/|__/_/_/  /_/___/
+                          | | /| / / // / _ /_  __/
+                          | |/ |/ / _  / __ |/ /
+                          |__/|__/_//_/_/ |_/_/________  ______
+                          \ \/ / __ \/ / / / / ___/ __ \/_  __/
+                           \  / /_/ / /_/ / / (_ / /_/ / / /
+                           /_/\____/\____/  \___/\____/ /_/
+
+
+
+(DELOPPGAVE C)
+size() - Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+         Vi ser også at det ikke er noen løkker i metoden. Og dette gir oss også en pediksjon på at det er
+         en O(1) notasjon.
+
+
+addFirst() - Er en O(N^2) notasjon. Årsaken til det er at ytelse er direkte proporsjonal med kvadratet av størrelsen på dataen.
+             Dette skyldes at vi har nøstede løkker.
+
+
+pullFirst() - Er også en O(N) notasjon. Årsaken til det er at ytelse vil vokse lineært og i direkte forhold til størrelsen på inngangsdataen.
+              Det er også løkker i metoden som gir oss en pekepinn på at det er en O(N) notasjon.
+
+
+peekFirst() - Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+             Vi er også at det ikke er noen løkker i metoden. Og dette gir oss også en pekepinn på at det er en O(1) notasjon.
+
+
+
+(DELOPPGAVE E)
+addLast() - Er en O(N^2) notasjon. Årsaken til det er at ytelse er direkte proporsjonal med kvadratet av størrelsen på dataen.
+            Dette skyldes at vi har nøstede løkker. Samme som med addFirst.
+
+
+pullLast() - Er også en O(N) notasjon. Årsaken til det er at ytelse vil vokse lineært og i direkte forhold til størrelsen på inngangsdataen.
+             Det er også løkker i metoden som gir oss en pekepinn på at det er en O(N) notasjon.
+
+
+peekLast() - Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+             Vi er også at det ikke er noen løkker i metoden. Og dette gir oss også en pekepinn på at det er en O(1) notasjon.
+
+(DELOPPGAVE G)
+
+clear() - Er også en O(N) notasjon. Årsaken til det er at ytelse vil vokse lineært og i direkte forhold til størrelsen på inngangsdataen.
+          Det er også løkker i metoden som gir oss en pekepinn på at det er en O(N) notasjon.
+
+
+contains() - Er også en O(N) notasjon. Årsaken til det er at ytelse vil vokse lineært og i direkte forhold til størrelsen på inngangsdataen.
+             Det er også løkker i metoden som gir oss en pekepinn på at det er en O(N) notasjon.
+
+
+toArray() - toArray mener jeg er en O(N) notasjon fordi den copierer et array.
+
+
+
+(DELOPPGAVE H)
+Så hvis vi ser på de to deloppgavene C og E ser vi at ser vi at de er ganske like når det kommer til O notasjonene.
+addFirst() og addLast() bruker begge nøstede løkker som betyr at de er O(N^2) notasjon.
+O(N^2) notasjon "represents an algorithm whose performance is directly proportional to the square of the size of the input data set."
+
+Begge pull metodene er O(N) notasjoner. Dette betyr at ytelse vil vokse lineært og i direkte forhold til størrelsen på inngangsdataen.
+Siden det er en O(N) betyr det vi bare tar i bruk enkel løkker, og vi har ikke nøstet sammen noen.
+
+Og til slutt har vi begge peek metodene. Disse er O(1) notasjoner dette er fordi den alltid vil kjøre til samme tid uavhengig av
+størrelsen på dataen. begge returnerer bare en variabel som er en del av feltet.
+
+
+
+
+(DELOPPGAVE I)
+
+Den første metoden tar en samling med Integers og regner ut gjennomsnittet av denne samlingen.
+Vi går gjennom 1 for løkke. Dette betyr at vi her snakker om en O(N) notasjon.
+
+Den andre metoden derimot IDeque tar i bruk metoden over(Average) inni en for løkke som gjør at vi får en nøstet løkke.
+Denne metoden er derfor en O(N^2) notasjon.
+
+
+
+
+
+
+
+
+
