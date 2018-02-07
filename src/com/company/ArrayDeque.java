@@ -61,30 +61,6 @@ public class ArrayDeque<E> implements IDeque<E> {
 
 
 
-//    @Override
-//    public void addFirst(E elem) throws DequeFullException {
-//        if(unitsInDeque >= arrayDeque.length){
-//            throw new DequeFullException("Deque is full");
-//        }else{
-//            if(arrayDeque[0] == null){
-//                arrayDeque[0] = elem;
-//            }else {
-//
-//                E[] temp = (E[]) new Object[arrayDeque.length];
-//
-//                for (int i = 0; i < arrayDeque.length - 1; i++) {
-//                    temp[i + 1] = arrayDeque[i];
-//                }
-//
-//                for (int j = 0; j < temp.length - 1; j++) {
-//                    arrayDeque[j] = temp[j];
-//                }
-//
-//                arrayDeque[0] = elem;
-//                unitsInDeque++;
-//            }
-//        }
-//    }
 
 
 
@@ -105,30 +81,6 @@ public class ArrayDeque<E> implements IDeque<E> {
 
 
 
-
-
-
-//    @Override
-//    public E pullFirst() throws DequeEmptyException {
-//
-//        if(unitsInDeque <= 0){
-//            throw new DequeEmptyException("Deque is empty");
-//        }else{
-//            E first = arrayDeque[0];
-//            E [] temp = (E[])new Object[arrayDeque.length];
-//
-//            //kopierer arrayDeque til temp
-//            for(int i = 0; i < arrayDeque.length-1; i++){
-//               temp[i] = arrayDeque[i];
-//            }
-//            //Flytter elementene i arrayDeque 1 til venstre.
-//            for(int j = 0; j < temp.length-1; j++){
-//                arrayDeque[j] = temp[j + 1];
-//            }
-//            unitsInDeque--;
-//            return first;
-//        }
-//    }
 
 
     @Override
@@ -168,36 +120,6 @@ public class ArrayDeque<E> implements IDeque<E> {
         }
     }
 
-
-
-
-
-
-//    @Override
-//    public E pullLast() throws DequeEmptyException {
-//        if(unitsInDeque <= 0){
-//            throw new DequeEmptyException("Deque is empty");
-//        }
-//
-//        E returnunit = arrayDeque[arrayDeque.length - 1];
-//        E [] temp = (E[])new Object[arrayDeque.length];
-//
-//        //lager en kopi av arrayer.
-//        for(int j = 0; j < arrayDeque.length - 1; j++){
-//            temp[j] = arrayDeque[j];
-//        }
-//
-//        if(returnunit == null){
-//            return null;
-//        }else{
-//            for(int i = arrayDeque.length-1; i >= 1; i--){
-//                arrayDeque[i] = temp[i - 1];
-//            }
-//        return returnunit;
-//
-//        }
-//
-//    }
 
 
     @Override
